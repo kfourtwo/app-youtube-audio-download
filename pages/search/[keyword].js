@@ -13,7 +13,9 @@ export default function SearchPage({ videos }) {
               className="video-thumbnail"
             />
             <a
-              href={`http://13.214.29.87:5000/youtube/download-audio?url=https://www.youtube.com/watch?v=${video.id}`}
+              target="_blank"
+              href={`https://api-youtube-download-audio.vercel.app/download-audio?url=https://www.youtube.com/watch?v=${video.id}`}
+              download
             >
               Download Audio
             </a>
